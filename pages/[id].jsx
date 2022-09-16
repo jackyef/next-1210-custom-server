@@ -1,11 +1,6 @@
-import { NextPage } from "next";
 import { useRouter } from "next/router";
 
-type Props = { 
-  idFromServer: string
-}
-
-const IdPage: NextPage<Props> = ({ idFromServer }) => {
+const IdPage = ({ idFromServer }) => {
   const router = useRouter();
 
   return (
